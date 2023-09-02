@@ -1,0 +1,90 @@
+@media screen and (min-width: 768px) {
+    .container{
+      
+        max-width: 768px;
+
+    }
+    .menu{
+        display: flex;
+    }
+    .adr {
+        display: block;
+    }
+    .open-mob-btn{
+        display: none;
+    }
+    .logo-header{
+        margin-right: 120px;
+    }
+    .mailtel {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;  
+    }
+    .contacts {
+        font-size: 12px;
+        line-height: calc(14 / 12);       
+        letter-spacing: 0.02em;
+        color: #434455;
+    transition: color var(--timing-function);
+    }
+    .contacts:hover, .contacts:focus {
+        color: #404bbf;
+    }
+    .mobile-menu{
+        display: none;
+    }
+    .main-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-tab1x.jpg);
+    }
+    .main-h {
+        font-size: 56px;
+        line-height: calc(60 / 56);
+        max-width: 496px;
+        margin-bottom: 36px;
+    }
+    .secondary-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    
+    }
+    .sec-item{
+        flex-basis: calc((100% - 24px) / 2);
+    }
+    .list-header {
+        text-align: left;
+    }
+    .fourth-section {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .testing {
+        /* flex-basis: calc((100% - 24px) / 2); */
+    }
+    .customers-list {
+        justify-content: center;
+        
+    }
+    
+    .customers-item {
+        width: calc((100% - 48px) / 4);
+    }
+    .section-footer-text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .link-logo-footer{
+   justify-content: flex-start;
+    }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+ screen and (min-resolution: 192dpi) and (min-width: 768px),
+ screen and (min-resolution: 2dppx) and (min-width: 768px) {
+ .main-section {
+  background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+   url(../images/hero-tab2x.jpg);
+ }
+}

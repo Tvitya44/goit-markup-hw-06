@@ -9,6 +9,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="./styles/styles.css">
+<link rel="stylesheet" href="./styles/mobile.css">
+<link rel="stylesheet" href="./styles/tablet.css">
+<link rel="stylesheet" href="./styles/desktop.css">
+
 <title>Index</title>
 </head>
 
@@ -31,6 +35,11 @@
              
             </ul>
         </nav>
+        <button type="button" class="open-mob-btn" data-menu-open>
+            <svg class="open-mob-icon" width="32" height="22">
+                <use href="./images/icons.svg#icon-menu-hamburger"></use>
+            </svg>
+        </button>
         <address class="adr">
             <ul class="mailtel list">
                 <li>
@@ -42,6 +51,15 @@
             </ul>
         </address>
     </div>
+    <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+            <button class="close-mob-btn" data-menu-close>
+                <svg class="close-mob-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
     </header>
     <!--Main-->
     <main>
@@ -51,9 +69,9 @@
             <h1 class="main-h">Effective Solutions for Your Business</h1>
             <button class="button-list-section" data-modal-open>Order Service</button>
         </div>
-        </section>
+        </section> 
         <!--Section 2-->
-            <section class="secondary section"> 
+          <section class="secondary section"> 
                 <div class="container">
             <h2 class="visually-hidden"> Hidden Text </h2>
             <ul class="secondary-list list">
@@ -101,33 +119,46 @@
         </div>
         </section>
         <!--Section 3-->
-        <section class="third-section list">
+           <section class="third-section list">
             <div class="container">
             <h2 class="list-wawd-h">What are we doing</h2>
             <ul class="third-list list">
                 <li  class="likethis">
-                    <img src="./images/img1.jpg" alt="Desktop" width="360" height="300">
+
+                    <img
+  srcset="./images/desktop1x.jpg 1x, ./images/desktop2x.jpg 2x"
+  src="./images/desktop1x.jpg"
+  alt="Desktop" width="360" height="300"
+/>
+                   
                 </li>
                 <li  class="likethis">
-                    <img src="./images/img2.jpg" alt="phone screen" width="360" height="300">
+                    <img
+                    srcset="./images/screen1x.jpg. 1x, ./images/screen2x.jpg 2x"
+                    src="./images/screen1x.jpg"
+                    alt="Screen" width="360" height="300" />
                 </li>
                 <li  class="likethis">
-                    <img src="./images/img3.jpg" alt="phone" width="360" height="300">
+                    <img 
+                    srcset="./images/phonelaptop1x.png 1x, ./images/phonelaptop2x.jpg 2x"
+                    src="./images/phonelaptop1x.jpg"
+                    alt="Phonelap" width="360" height="300" />
+                </li>
                 </li>
             </ul>
         </div>
-        </section>
+        </section> 
     
         <!--Section 4-->
     
-        <section class="list-our-team">
+        <section class="list-our-team"> 
             <div class="container">
             <h2 class="list-wawd-h"> Our Team</h2>
             <ul class="fourth-section list">
                 <li class="testing ">
                     <img class= "images" src="./images/mark.jpg" alt="Mark" width="264" height="260"> 
                     <div class="people-names">
-                    <h3 class="list-header">Mark Guerrero</h3>
+                    <h3 class="list-header1">Mark Guerrero</h3>
                     <p class="list-p"> Product Designer</p>
                     <ul class="social-media-list list">
                         <li class="social-media-item"><a href="" class="social-media-link">
@@ -164,7 +195,7 @@
                    
                     <img class= "images" src="./images/tom.jpg" alt="Tom" width="264" height="260"> 
                     <div class="people-names">
-                    <h3 class="list-header">Tom Ford</h3>
+                    <h3 class="list-header1">Tom Ford</h3>
                     <p class="list-p">Frontend Developer</p>
                     <ul class="social-media-list list">
                         <li class="social-media-item"><a href="" class="social-media-link">
@@ -193,12 +224,12 @@
                     </li>
                     </ul>
                     </div>
-                    <!--<img src="/images/our.team2/tom.1.jpg" alt="Tom" width="232" height="52">-->
+                  
                 </li>
                 <li class="testing">
                         <img class= "images" src="./images/camila.jpg" alt="Camila" width="264" height="260"> 
                         <div class="people-names">
-                        <h3 class="list-header">Camila Garcia</h3>
+                        <h3 class="list-header1">Camila Garcia</h3>
                         <p class="list-p">Marketing</p>
                         <ul class="social-media-list list">
                             <li class="social-media-item"><a href="" class="social-media-link">
@@ -228,12 +259,12 @@
                         </ul>
                         </div>
                 
-                    <!--<img src="/images/our.team2/camila.1.jpg" alt="Camila" width="232" height="52">-->
+                 
                 </li>
                 <li class="testing">
                     <img class= "images" src="./images/daniel.jpg" alt="Daniel" width="264" height="260"> 
                     <div class="people-names">
-                    <h3 class="list-header">Daniel Wilson</h3>
+                    <h3 class="list-header1">Daniel Wilson</h3>
                     <p class="list-p">UI Designer</p>
                     <ul class="social-media-list list">
                         <li class="social-media-item"><a href="" class="social-media-link">
@@ -262,11 +293,11 @@
                     </li>
                     </ul>
                     </div>
-                    <!--<img src="/images/our.team2/daniel.1.jpg" alt="Daniel" width="232" height="52">-->
+              
                 </li>
             </ul>
         </div>
-        </section>
+        </section> 
         <section class="section">
             <div class="container">
                 <h2 class="customers-title">Customers</h2>
@@ -315,10 +346,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> 
     </main>
     <!--Footer section-->
-    <footer class="section-footer">
+     <footer class="section-footer">
    
         <div class="footer-media-links container">
         <div class="logoandpara">
@@ -368,7 +399,7 @@
             </ul>
         </div>
 
-        <!-- Footer subscribe form DIV -->
+
 
         <div class="bottom-right-corner">
             <p class="para-bottom-right">Subscribe</p>
@@ -390,8 +421,10 @@
         </div>
 
 
-        <!-- modal form -->
-    </footer>
+     
+    </footer> 
+
+    <!-- MODAL FORM -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
@@ -400,12 +433,12 @@
                 </svg>
             </button> 
             <p class="form-para">Leave your contacts and we will call you back</p>
-            <!-- <form class="modal-form"> -->
+     
 
 
           
                 <form class="modal-form-name" name="review_form">
-                    <!-- <div class="entire-form"> -->
+                
               <div class="label-form">
                 <label for="user-name"
                  class="form-label"
@@ -460,8 +493,7 @@
                     </svg>
                    </div>
                  </div>
-            
-            <!-- <div> -->
+       
                 <div class="comment-label-section">
                     <label
                     for="user-comment"
@@ -499,6 +531,7 @@
 </form>
 </div>
 </div>
+<script src="./js/mobile-menu.js"></script>
 </body>
 
  
