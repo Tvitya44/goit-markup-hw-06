@@ -79,6 +79,37 @@
     .link-logo-footer{
    justify-content: flex-start;
     }
+    .footer-media-links{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+    .logoandpara{
+        flex-basis: calc((100% - 24px) / 2);
+    }
+    .footer-links{
+        flex-basis: calc((100% - 24px) / 2);
+    }
+    .bottom-right-corner{
+        display: flex;
+        flex-basis: calc((100% - 24px) / 2);
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+    .bootom-right-footer-form{
+        display: flex;
+        align-items: baseline;
+        gap: 160px;
+    }    
+    .btn-bottom-right {
+ margin-top: 16px;
+    }
+    .footer-bottom-right-label{
+        width: 264px;
+        
+    }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
  screen and (min-resolution: 192dpi) and (min-width: 768px),

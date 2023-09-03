@@ -62,7 +62,15 @@
     margin-left: 0;
     margin-right: 0;
 }
-.
+.logoandpara{
+    margin-right: 120px;
+}
+.footer-media-links {
+    flex-wrap: nowrap;
+}
+.bootom-right-footer-form{
+    gap: 24px;
+}
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
