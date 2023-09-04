@@ -56,7 +56,10 @@
     flex-basis: calc((100% - 72px) / 4);
 }
 .customers-item{
-    flex-basis: calc((100% - 120px) / 7);
+    flex-basis: calc((100% - 120px) / 6);
+}
+.customer-container{
+    width: 100%;
 }
 .section-footer-text {
     margin-left: 0;
@@ -67,6 +70,7 @@
 }
 .footer-media-links {
     flex-wrap: nowrap;
+    width: 100%;
 }
 .bootom-right-footer-form{
     gap: 24px;
