@@ -1,0 +1,18 @@
+.sign-up-image2{
+    width: 340px;
+height: 540px;
+flex-shrink: 0;
+border-radius: 1000px;
+background: #1D1D1D;
+}
+.sign-up-image1{
+    width: 180px;
+height: 288px;
+flex-shrink: 0;
+border-radius: 1000px;
+background: #BEA69E;
+}
+.sign-up-images{
+    display: flex;
+    gap: 20px;
+}
